@@ -9,7 +9,36 @@ module "elastic_beanstalk_application" {
   attributes  = compact(concat(var.attributes, ["app"]))
   tags        = var.tags
 }
-
+module "elastic_beanstalk_application" {
+  source      = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application.git?ref=tags/0.4.0"
+  namespace   = var.namespace
+  name        = var.name
+  stage       = var.stage
+  description = var.description
+  delimiter   = var.delimiter
+  attributes  = compact(concat(var.attributes, ["app"]))
+  tags        = var.tags
+}
+module "elastic_beanstalk_application" {
+  source      = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application.git?ref=tags/0.4.0"
+  namespace   = var.namespace
+  name        = var.name
+  stage       = var.stage
+  description = var.description
+  delimiter   = var.delimiter
+  attributes  = compact(concat(var.attributes, ["app"]))
+  tags        = var.tags
+}
+module "elastic_beanstalk_application" {
+  source      = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application.git?ref=tags/0.4.0"
+  namespace   = var.namespace
+  name        = var.name
+  stage       = var.stage
+  description = var.description
+  delimiter   = var.delimiter
+  attributes  = compact(concat(var.attributes, ["app"]))
+  tags        = var.tags
+}
 # Elastic Beanstalk Environment
 module "elastic_beanstalk_environment" {
   source     = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment.git?ref=tags/0.16.0"
